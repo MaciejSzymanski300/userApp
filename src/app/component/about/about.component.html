@@ -1,0 +1,49 @@
+
+<table class="table">
+  <thead>
+  <tr>
+    <th scope="col">Original value</th>
+    <th scope="col">Pipe name</th>
+    <th scope="col">Changed value</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>{{stringVariable}}</td>
+    <td>uppercase</td>
+    <td>{{stringVariable | uppercase}}</td>
+  </tr>
+  <tr>
+    <td>{{stringVariable1}}</td>
+    <td>lowercase</td>
+    <td>{{stringVariable1 | lowercase}}</td>
+  </tr>
+  <tr>
+    <td>{{birthDate}}</td>
+    <td>date</td>
+    <td>{{birthDate | date: 'fullTime'}}</td>
+  </tr>
+  <tr>
+    <td>{{jsonObj}}</td>
+    <td>json</td>
+    <td>{{jsonObj | date: 'fullTime'}}</td>
+  </tr>
+  <tr>
+    <td>{{kebabCaseVar}}</td>
+    <td>snakeCase</td>
+    <td>{{kebabCaseVar | snakeCase}}</td>
+  </tr>
+  </tbody>
+</table>
+
+<div class="card" style="width: 18rem;">
+  <img src="assets/cyberpunk2077.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Cybekpunk 2077</h5>
+    <p class="card-text">Cyberpunk 2077 is an open-world, action-adventure story set in Night City,
+      a megalopolis obsessed with power, glamour and body modification. You play as V, a mercenary
+      outlaw going after a one-of-a-kind implant that is the key to immortality.</p>
+    <a class="btn btn-primary btn-lg" [routerLink]="['/', 'home']" role="button">Go Home!</a>
+
+  </div>
+</div>
